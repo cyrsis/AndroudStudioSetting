@@ -32,11 +32,4 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="et" value="  &lt;EditText&#10;      android:layout_width=&quot;match_parent&quot;&#10;      android:layout_height=&quot;wrap_content&quot;&#10;      android:hint=&quot;$hint$&quot;&#10;      android:inputType=&quot;$inputType$&quot;&#10;      /&gt;" description="EditText with Input Type" toReformat="true" toShortenFQNames="true">
-    <variable name="hint" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="inputType" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
 </templateSet>
