@@ -1,0 +1,26 @@
+<templateSet group="Dart">
+  <template name="setstate" value="setState(() {&#10;      $_counter$;&#10;    });" description="setState(() {" toReformat="true" toShortenFQNames="true">
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newfab" value="floatingActionButton: new FloatingActionButton(&#10;        onPressed: _incrementCounter,&#10;        tooltip: 'Increment',&#10;        child: new Icon(Icons.add),&#10;      )" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newfunc" value="void $_incrementCounter$() {&#10;    setState(() {&#10;      $_counter$++;&#10;    });&#10;  }" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <variable name="_incrementCounter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIcon" value="child: new Icon(Icons.$add$)" description="child: new Icon(Icons.$add$)" toReformat="true" toShortenFQNames="true">
+    <variable name="add" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+</templateSet>
