@@ -1,0 +1,27 @@
+<templateSet group="Flutter">
+  <template name="newstateless" value="class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;    &#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="IMmaterial" value="import 'package:flutter/material.dart' ;" description="import 'package:flutter/material.dart' ;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="childCenter" value="child: new Center(&#10;         $code$&#10;       )" description="child: new Center(" toReformat="false" toShortenFQNames="true">
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="childIcon" value="child: new Icon(Icons.$accessibility_new$,size :$150$,color: Colors.$brown$)" description="child: new Icon(Icons.a$ccessibility_new$,size :$150$,color: Colors.$brown$)" toReformat="false" toShortenFQNames="true">
+    <variable name="accessibility_new" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="150" expression="" defaultValue="&quot;150&quot;" alwaysStopAt="true" />
+    <variable name="brown" expression="" defaultValue="&quot;brown&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>
