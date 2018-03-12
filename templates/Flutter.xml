@@ -24,4 +24,10 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="newTabController" value="  TabController controller;&#10;  @override&#10;  void initState() {&#10;    super.initState();&#10;    controller = new TabController(length: $4$, vsync: this);&#10;  }&#10;  &#10;  @override&#10;  void dispose() {&#10;    controller.dispose();&#10;        super.dispose();&#10;  }&#10;" description="TabController controller;" toReformat="false" toShortenFQNames="true">
+    <variable name="4" expression="" defaultValue="&quot;4&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
 </templateSet>
