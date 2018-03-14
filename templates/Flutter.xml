@@ -250,4 +250,24 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="IMIOS" value="import 'package:flutter/cupertino.dart';" description="import 'package:flutter/cupertino.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIosIndicator" value="new CupertinoActivityIndicator()," description="new CupertinoActivityIndicator()," toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="setState1Line" value="setState(() { _pressedCount += 1; });" description="setState(() { _pressedCount += 1; });" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newRaisedButton" value="new RaisedButton(&#10;            child: const Text('Connect with Twitter'),&#10;            color: Theme.of(context).accentColor,&#10;            elevation: 4.0,&#10;            splashColor: Colors.blueGrey,&#10;            onPressed: () {&#10;              // Perform some action&#10;            },&#10;          )," description="new RaisedButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
