@@ -275,4 +275,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="colorHex" value="const Color(0xFFFFFF)" description="const Color(0xFFFFFF)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
