@@ -245,4 +245,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newWhiteCardClass" value="import 'package:flutter/material.dart';&#10;&#10;class WhiteCard extends StatelessWidget {&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    final TextStyle textStyle = Theme.of(context).textTheme.display1;&#10;    return new Card(&#10;      color: Colors.transparent,&#10;      child: new Center(&#10;        child: new Column(&#10;          mainAxisSize: MainAxisSize.min,&#10;          crossAxisAlignment: CrossAxisAlignment.center,&#10;          children: &lt;Widget&gt;[&#10;            new Icon(Icons.warning, size: 128.0, color: textStyle.color),&#10;            new Text(&quot;Text&quot;, style: textStyle),&#10;          ],&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="newWhiteCardClass" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
