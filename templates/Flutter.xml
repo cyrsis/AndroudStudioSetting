@@ -1,22 +1,22 @@
 <templateSet group="Flutter">
-  <template name="newstateless" value="class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;    &#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+  <template name="newstateless" value="class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;    &#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="IMmaterial" value="import 'package:flutter/material.dart' ;" description="import 'package:flutter/material.dart' ;" toReformat="false" toShortenFQNames="true">
+  <template name="IMmaterial" value="import 'package:flutter/material.dart' ;" description="import 'package:flutter/material.dart' ;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="childCenter" value="child: new Center(&#10;         $code$&#10;       )" description="child: new Center(" toReformat="false" toShortenFQNames="true">
+  <template name="childCenter" value="child: new Center(&#10;         $code$&#10;       )" description="child: new Center(" toReformat="true" toShortenFQNames="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="childIcon" value="child: new Icon(Icons.$accessibility_new$,size :$150$,color: Colors.$brown$)" description="child: new Icon(Icons.a$ccessibility_new$,size :$150$,color: Colors.$brown$)" toReformat="false" toShortenFQNames="true">
+  <template name="childIcon" value="child: new Icon(Icons.$accessibility_new$,size :$150$,color: Colors.$brown$)" description="child: new Icon(Icons.a$ccessibility_new$,size :$150$,color: Colors.$brown$)" toReformat="true" toShortenFQNames="true">
     <variable name="accessibility_new" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="150" expression="" defaultValue="&quot;150&quot;" alwaysStopAt="true" />
     <variable name="brown" expression="" defaultValue="&quot;brown&quot;" alwaysStopAt="true" />
@@ -30,7 +30,7 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="newAppbarWithTabs" value="   appBar: new AppBar(&#10;           title: new Text(&quot;Pages&quot;),&#10;           backgroundColor: Colors.deepOrange,&#10;         bottom: new TabBar(&#10;           controller: controller,&#10;           tabs: &lt;Tab&gt;[&#10;             new Tab(icon: new Icon(Icons.home)),&#10;             new Tab(icon: new Icon(Icons.explore)),&#10;             new Tab(icon: new Icon(Icons.search)),&#10;             new Tab(icon: new Icon(Icons.account_box)),&#10;           ],&#10;         ),&#10;       )," description="appBar: new AppBar(" toReformat="false" toShortenFQNames="true">
+  <template name="newAppbarWithTabs" value="   appBar: new AppBar(&#10;           title: new Text(&quot;Pages&quot;),&#10;           backgroundColor: Colors.deepOrange,&#10;         bottom: new TabBar(&#10;           controller: controller,&#10;           tabs: &lt;Tab&gt;[&#10;             new Tab(icon: new Icon(Icons.home)),&#10;             new Tab(icon: new Icon(Icons.explore)),&#10;             new Tab(icon: new Icon(Icons.search)),&#10;             new Tab(icon: new Icon(Icons.account_box)),&#10;           ],&#10;         ),&#10;       )," description="appBar: new AppBar(" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART_TOPLEVEL" value="true" />
     </context>
@@ -40,7 +40,27 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
-  <template name="newBoxDecoration" value="decoration: new BoxDecoration(color: Colors.blue[500])," description="new BoxDecoration(color: Colors.blue[500])," toReformat="false" toShortenFQNames="true">
+  <template name="newBoxDecoration" value="decoration: new BoxDecoration(color: Colors.blue[500])," description="new BoxDecoration(color: Colors.blue[500])," toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newstateful" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; new _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;  }&#10;}&#10;" description="New Stateful widget" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newstatefulwithAnimation" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; new _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt;&#10;    with SingleTickerProviderStateMixin {&#10;  AnimationController _controller;&#10;&#10;  @override&#10;  void initState() {&#10;    super.initState();&#10;    _controller = new AnimationController(vsync: this);&#10;  }&#10;&#10;  @override&#10;  void dispose() {&#10;    super.dispose();&#10;    _controller.dispose();&#10;  }&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;  }&#10;}&#10;" description="New widget with AnimationController" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newModelClass" value="class $Actor$ {&#10;  $Actor$({&#10;    this.$name$,&#10;    this.$avatarUrl$,&#10;  });&#10;&#10;  final String $name$;&#10;  final String $avatarUrl$;&#10;}" description="child: new Center(" toReformat="true" toShortenFQNames="true">
+    <variable name="Actor" expression="" defaultValue="&quot;Actor&quot;" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;name:&quot;" alwaysStopAt="true" />
+    <variable name="avatarUrl" expression="" defaultValue="&quot;avatarUrl&quot;" alwaysStopAt="true" />
     <context>
       <option name="DART_TOPLEVEL" value="true" />
     </context>
