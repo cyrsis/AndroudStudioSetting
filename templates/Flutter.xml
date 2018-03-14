@@ -105,4 +105,67 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="newCacheImage" value=" new CachedNetworkImage( //cached_network_image: &quot;^0.3.0&quot;&#10;          placeholder: new CircularProgressIndicator(),&#10;          errorWidget: new Icon(Icons.error),&#10;          imageUrl:&#10;          'https://raw.githubusercontent.com/flutter/website/master/_includes/code/layout/lakes/images/lake.jpg',&#10;        )," description="new CachedNetworkImage(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newCenter" value="new Center(child:$widget$)," description="new Center(child:$widget$)," toReformat="true" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newIcon" value="new Icon(Icons.$add$)" description="child: new Icon(Icons.$add$)" toReformat="true" toShortenFQNames="true">
+    <variable name="add" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newText" value="new Text('$String$')," description="new Text(" toReformat="true" toShortenFQNames="true">
+    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newBackgroundImage" value="image: new DecorationImage(&#10;                    image: new NetworkImage(&#10;                        'https://www.example.com/images/frame.png'),&#10;                    centerSlice: new Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),&#10;                  )," description="image: new DecorationImage" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newfab" value="floatingActionButton: new FloatingActionButton(&#10;        onPressed: _incrementCounter,&#10;        tooltip: 'Increment',&#10;        child: new Icon(Icons.add),&#10;      )" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newfunc" value="void $_incrementCounter$() {&#10;    setState(() {&#10;      $_counter$++;&#10;    });&#10;  }" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <variable name="_incrementCounter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTextStyle" value="new Text('$_counter$',style: Theme.of(context).textTheme.display1)," description="newTextStyle" toReformat="true" toShortenFQNames="true">
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newtranform" value="transform: new Matrix4.rotationZ($var$)," description="transform: new Matrix4.rotationZ(0.1)," toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="&quot;0.1&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="setstate" value="setState(() {&#10;      $_counter$;&#10;    });" description="setState(() {" toReformat="true" toShortenFQNames="true">
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newSquare" value="new Center(&#10;                child: new Container(&#10;                  margin: const EdgeInsets.all(10.0),&#10;                  color: const Color(0xFF00FF00),&#10;                  width: 48.0,&#10;                  height: 48.0,&#10;                ),&#10;              )," description="new Center(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
