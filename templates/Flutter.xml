@@ -173,10 +173,10 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newContainer" value="new Container(&#10;      padding: const EdgeInsets.symmetric(horizontal: 8.0),&#10;      child: $widget$&#10;    );" description="new Container(" toReformat="true" toShortenFQNames="true">
+  <template name="newContainer" value="new Container(&#10;      padding: const EdgeInsets.symmetric(horizontal: 8.0),&#10;      child: $widget$&#10;    )" description="new Container(" toReformat="true" toShortenFQNames="true">
     <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART" value="true" />
     </context>
   </template>
   <template name="scrollDirection" value="scrollDirection: Axis.$horizontal$," description="scrollDirection: Axis.horizontal," toReformat="true" toShortenFQNames="true">
@@ -188,6 +188,38 @@
   <template name="newlistView" value="new ListView(&#10;        children: &lt;Widget&gt;[&#10;          new ListTile(&#10;            leading: new Icon(Icons.map),&#10;            title: new Text('Map'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.photo),&#10;            title: new Text('Album'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.phone),&#10;            title: new Text('Phone'),&#10;          ),&#10;        ],&#10;      )," description="new ListView(" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newButtonCustom" value="new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        decoration: new BoxDecoration(&#10;          color: Theme.of(context).buttonColor,&#10;          borderRadius: new BorderRadius.circular(8.0),&#10;        ),&#10;        child: new Text('$ButtonText$'),&#10;      )," description="child: new Container(" toReformat="true" toShortenFQNames="true">
+    <variable name="ButtonText" expression="" defaultValue="&quot;ButtonText&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="onTapCallback" value="onTap: () {&#10;        $callback$&#10;      }," description="onTap: () {" toReformat="true" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="SnackBar" value=" final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;&#10;        Scaffold.of(context).showSnackBar(snackBar);" description="SnackBar" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newGestureDector" value="new Container(&#10;              child: new GestureDetector(&#10;                onTap: () {&#10;                  final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;                  Scaffold.of(context).showSnackBar(snackBar);&#10;                },&#10;                // Our Custom Button!&#10;                child: new Container(&#10;                  padding: new EdgeInsets.all(12.0),&#10;                  decoration: new BoxDecoration(&#10;                    color: Theme&#10;                        .of(context)&#10;                        .buttonColor,&#10;                    borderRadius: new BorderRadius.circular(8.0),&#10;                  ),&#10;                  child: new Text('My Button'),&#10;                ),&#10;              )&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCustomTouchClass" value="import 'package:flutter/material.dart';&#10;&#10;class CustomTouch extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    // Our GestureDetector wraps our button&#10;    return new GestureDetector(&#10;      // When the child is tapped, show a snackbar&#10;      onTap: () {&#10;        final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;&#10;        Scaffold.of(context).showSnackBar(snackBar);&#10;      },&#10;      // Our Custom Button!&#10;      child: new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        decoration: new BoxDecoration(&#10;          color: Theme.of(context).buttonColor,&#10;          borderRadius: new BorderRadius.circular(8.0),&#10;        ),&#10;        child: new Text('My Button'),&#10;      ),&#10;    );&#10;  }&#10;}" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newInkWallButtonClass" value="import 'package:flutter/material.dart';&#10;&#10;class InkWallBUtton extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    // The InkWell Wraps our custom flat button Widget&#10;    return new InkWell(&#10;      // When the user taps the button, show a snackbar&#10;      onTap: () {&#10;        Scaffold.of(context).showSnackBar(new SnackBar(&#10;          content: new Text('Tap'),&#10;        ));&#10;      },&#10;      child: new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        child: new Text('Ink Wall Button'),&#10;      ),&#10;    );&#10;  }&#10;}" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
     </context>
   </template>
 </templateSet>
