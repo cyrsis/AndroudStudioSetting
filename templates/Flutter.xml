@@ -168,7 +168,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="newlistView" value="new ListView( //Under Container&#10;        scrollDirection: Axis.horizontal,&#10;        children: &lt;Widget&gt;[&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.red,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.blue,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.green,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.yellow,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.orange,&#10;          ),&#10;        ],&#10;      )," description="//Under Container" toReformat="true" toShortenFQNames="true">
+  <template name="newlistViewHoriz" value="new ListView( //Under Container&#10;        scrollDirection: Axis.horizontal,&#10;        children: &lt;Widget&gt;[&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.red,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.blue,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.green,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.yellow,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.orange,&#10;          ),&#10;        ],&#10;      )," description="//Under Container" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
@@ -179,8 +179,13 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="scrolDirection" value="scrollDirection: Axis.$horizontal$," description="scrollDirection: Axis.horizontal," toReformat="true" toShortenFQNames="true">
+  <template name="scrollDirection" value="scrollDirection: Axis.$horizontal$," description="scrollDirection: Axis.horizontal," toReformat="true" toShortenFQNames="true">
     <variable name="horizontal" expression="" defaultValue="&quot;horizontal&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newlistView" value="new ListView(&#10;        children: &lt;Widget&gt;[&#10;          new ListTile(&#10;            leading: new Icon(Icons.map),&#10;            title: new Text('Map'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.photo),&#10;            title: new Text('Album'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.phone),&#10;            title: new Text('Phone'),&#10;          ),&#10;        ],&#10;      )," description="new ListView(" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
