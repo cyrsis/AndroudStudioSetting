@@ -270,4 +270,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newIOSicon" value="const Icon(CupertinoIcons.conversation_bubble)" description="const Icon(CupertinoIcons.conversation_bubble)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
