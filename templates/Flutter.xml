@@ -65,4 +65,11 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="newinstance" value="final $type$ $variable$ = new $type$(&#10;  &#10;);" description="final $type$ $variable$ = new $type$(" toReformat="true" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
 </templateSet>
