@@ -304,4 +304,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newOpacity" value="new Opacity(&#10;                    opacity: 0.15,&#10;                    child: new Text(&quot;Really&quot;)&#10;                ),//End of Opac" description="new Opacity(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
