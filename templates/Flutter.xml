@@ -304,7 +304,13 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="newOpacity" value="new Opacity(&#10;                    opacity: 0.15,&#10;                    child: new Text(&quot;Really&quot;)&#10;                ),//End of Opac" description="new Opacity(" toReformat="true" toShortenFQNames="true">
+  <template name="newOpacity" value="new Opacity(&#10;                    opacity: 0.15,&#10;                    child: new Text(&quot;$text$&quot;)&#10;                ),//End of Opac" description="new Opacity(" toReformat="true" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTextForm" value="new TextFormField(&#10;                decoration: new InputDecoration(labelText: 'Email'),&#10;                validator: (val) =&gt;&#10;                !val.contains('@') ? 'Not a valid email.' : null,&#10;                onSaved: (val) =&gt; _email = val,&#10;              )," description="new TextFormField(" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="DART" value="true" />
     </context>
