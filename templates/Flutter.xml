@@ -294,4 +294,14 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newCenterColumnText" value="new Center(&#10;            child: new Column(&#10;              mainAxisAlignment: MainAxisAlignment.center,&#10;&#10;              children: &lt;Widget&gt;[&#10;                new Text('Design by Luca'),&#10;                new Text('Code  by Victor'),&#10;              ],&#10;            )&#10;          )" description="new Center(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newBackgroundImage2" value="new Container(&#10;              decoration: new BoxDecoration(&#10;              image: new DecorationImage(&#10;                image: new AssetImage(&quot;assets/home/background.png&quot;),&#10;                fit: BoxFit.cover,),&#10;            ),&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
