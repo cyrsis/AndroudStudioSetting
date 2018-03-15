@@ -287,4 +287,11 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newIconData" value="const IconData(0x$e901$, fontFamily: '$icomoon$')" description="const IconData(0xe901, fontFamily: 'icomoon')" toReformat="true" toShortenFQNames="true">
+    <variable name="e901" expression="" defaultValue="&quot;e901&quot;" alwaysStopAt="true" />
+    <variable name="icomoon" expression="" defaultValue="&quot;icomoon&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
