@@ -1,0 +1,402 @@
+<templateSet group="Flutter">
+  <template name="newstateless" value="import 'package:flutter/material.dart';&#10;class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;    &#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMmaterial" value="import 'package:flutter/material.dart' ;" description="import 'package:flutter/material.dart' ;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="childCenter" value="child: new Center(&#10;         $code$&#10;       )" description="child: new Center(" toReformat="true" toShortenFQNames="true">
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="childIcon" value="child: new Icon(Icons.$accessibility_new$,size :$150$,color: Colors.$brown$)" description="child: new Icon(Icons.a$ccessibility_new$,size :$150$,color: Colors.$brown$)" toReformat="true" toShortenFQNames="true">
+    <variable name="accessibility_new" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="150" expression="" defaultValue="&quot;150&quot;" alwaysStopAt="true" />
+    <variable name="brown" expression="" defaultValue="&quot;brown&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTabController" value="  TabController controller;&#10;  @override&#10;  void initState() {&#10;    super.initState();&#10;    controller = new TabController(length: $4$, vsync: this);&#10;  }&#10;  &#10;  @override&#10;  void dispose() {&#10;    controller.dispose();&#10;        super.dispose();&#10;  }&#10;" description="TabController controller;" toReformat="true" toShortenFQNames="true">
+    <variable name="4" expression="" defaultValue="&quot;4&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newAppbarWithTabs" value="   appBar: new AppBar(&#10;           title: new Text(&quot;Pages&quot;),&#10;           backgroundColor: Colors.deepOrange,&#10;         bottom: new TabBar(&#10;           controller: controller,&#10;           tabs: &lt;Tab&gt;[&#10;             new Tab(icon: new Icon(Icons.home)),&#10;             new Tab(icon: new Icon(Icons.explore)),&#10;             new Tab(icon: new Icon(Icons.search)),&#10;             new Tab(icon: new Icon(Icons.account_box)),&#10;           ],&#10;         ),&#10;       )," description="appBar: new AppBar(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTabController2" value="TabController controller;&#10;  @override&#10;  void initState() {&#10;    super.initState();&#10;    controller = new TabController(length: 4, vsync: this);&#10;  }" description="import 'package:flutter/material.dart' ;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newBoxDecoration" value="decoration: new BoxDecoration(color: Colors.blue[500])," description="new BoxDecoration(color: Colors.blue[500])," toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newstateful" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; new _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;  }&#10;}&#10;" description="New Stateful widget" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newstatefulwithAnimation" value="class $NAME$ extends StatefulWidget {&#10;  @override&#10;  _$NAME$State createState() =&gt; new _$NAME$State();&#10;}&#10;&#10;class _$NAME$State extends State&lt;$NAME$&gt;&#10;    with SingleTickerProviderStateMixin {&#10;  AnimationController _controller;&#10;&#10;  @override&#10;  void initState() {&#10;    super.initState();&#10;    _controller = new AnimationController(vsync: this);&#10;  }&#10;&#10;  @override&#10;  void dispose() {&#10;    super.dispose();&#10;    _controller.dispose();&#10;  }&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Container($END$);&#10;  }&#10;}&#10;" description="New widget with AnimationController" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newModelClass" value="class $Actor$ {&#10;  $Actor$({&#10;    this.$name$,&#10;    this.$avatarUrl$,&#10;  });&#10;&#10;  final String $name$;&#10;  final String $avatarUrl$;&#10;}" description="child: new Center(" toReformat="true" toShortenFQNames="true">
+    <variable name="Actor" expression="" defaultValue="&quot;Actor&quot;" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;name:&quot;" alwaysStopAt="true" />
+    <variable name="avatarUrl" expression="" defaultValue="&quot;avatarUrl&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newinstance" value="final $type$ $variable$ = new $type$(&#10;  &#10;);" description="final $type$ $variable$ = new $type$(" toReformat="true" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newMaterialApp" value="new MaterialApp(&#10;      title: &quot;$Shunga$&quot;,&#10;      theme: new ThemeData(&#10;        brightness: Brightness.dark,&#10;        primaryColor: Colors.lightBlue[800],&#10;        accentColor: Colors.cyan[600],&#10;      ),&#10;      home: new mainTab()," description="final $type$ $variable$ = new $type$(" toReformat="true" toShortenFQNames="true">
+    <variable name="Shunga" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="newImageNetwork" value="new Image.network(&#10;          '$url$',&#10;        )," description="new Image.network(" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="&quot;https://github.com/flutter/website/blob/master/_includes/code/layout/lakes/images/lake.jpg?raw=true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="export" value="export '$fileName$' ;" description="export '$fileName$' ;" toReformat="true" toShortenFQNames="true">
+    <variable name="fileName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTheme" value="theme: new ThemeData(&#10;        brightness: Brightness.dark,&#10;        primaryColor: Colors.lightBlue[800],&#10;        accentColor: Colors.cyan[600],&#10;      )," description="theme: new ThemeData(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newfadeImage" value="new Center(  //transparent_image: &quot;^0.1.0&quot;&#10;          child: new FadeInImage.memoryNetwork(&#10;            placeholder: kTransparentImage,&#10;            image:&#10;            'https://github.com/flutter/website/blob/master/_includes/code/layout/lakes/images/lake.jpg?raw=true',&#10;          ),&#10;        )," description="child: new FadeInImage.memoryNetwork(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCircularProgressIndicator" value="new Center(child: new CircularProgressIndicator())," description="new Center(child: new CircularProgressIndicator())," toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCacheImage" value=" new CachedNetworkImage( //cached_network_image: &quot;^0.3.0&quot;&#10;          placeholder: new CircularProgressIndicator(),&#10;          errorWidget: new Icon(Icons.error),&#10;          imageUrl:&#10;          'https://raw.githubusercontent.com/flutter/website/master/_includes/code/layout/lakes/images/lake.jpg',&#10;        )," description="new CachedNetworkImage(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCenter" value="new Center(child:$widget$)," description="new Center(child:$widget$)," toReformat="true" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIcon" value="new Icon(Icons.$add$)" description="child: new Icon(Icons.$add$)" toReformat="true" toShortenFQNames="true">
+    <variable name="add" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newText" value="new Text('$String$')," description="new Text(" toReformat="true" toShortenFQNames="true">
+    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newBackgroundImage" value="image: new DecorationImage(&#10;                    image: new NetworkImage(&#10;                        'https://www.example.com/images/frame.png'),&#10;                    centerSlice: new Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),&#10;                  )," description="image: new DecorationImage" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newfab" value="floatingActionButton: new FloatingActionButton(&#10;        onPressed: _incrementCounter,&#10;        tooltip: 'Increment',&#10;        child: new Icon(Icons.add),&#10;      )" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newfunc" value="void $_incrementCounter$() {&#10;    setState(() {&#10;      $_counter$++;&#10;    });&#10;  }" description="floatingActionButton: new FloatingActionButton(" toReformat="true" toShortenFQNames="true">
+    <variable name="_incrementCounter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTextStyle" value="new Text('$_counter$',style: Theme.of(context).textTheme.display1)," description="newTextStyle" toReformat="true" toShortenFQNames="true">
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newtranform" value="transform: new Matrix4.rotationZ($var$)," description="transform: new Matrix4.rotationZ(0.1)," toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="&quot;0.1&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="setstate" value="setState(() {&#10;      $_counter$;&#10;    });" description="setState(() {" toReformat="true" toShortenFQNames="true">
+    <variable name="_counter" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newSquare" value="new Center(&#10;                child: new Container(&#10;                  margin: const EdgeInsets.all(10.0),&#10;                  color: const Color(0xFF00FF00),&#10;                  width: 48.0,&#10;                  height: 48.0,&#10;                ),&#10;              )," description="new Center(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newlistViewHoriz" value="new ListView( //Under Container&#10;        scrollDirection: Axis.horizontal,&#10;        children: &lt;Widget&gt;[&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.red,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.blue,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.green,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.yellow,&#10;          ),&#10;          new Container(&#10;            width: 160.0,&#10;            color: Colors.orange,&#10;          ),&#10;        ],&#10;      )," description="//Under Container" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newContainer" value="new Container(&#10;      padding: const EdgeInsets.symmetric(horizontal: 8.0),&#10;      child: $widget$&#10;    )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <variable name="widget" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="scrollDirection" value="scrollDirection: Axis.$horizontal$," description="scrollDirection: Axis.horizontal," toReformat="true" toShortenFQNames="true">
+    <variable name="horizontal" expression="" defaultValue="&quot;horizontal&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newlistView" value="new ListView(&#10;        children: &lt;Widget&gt;[&#10;          new ListTile(&#10;            leading: new Icon(Icons.map),&#10;            title: new Text('Map'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.photo),&#10;            title: new Text('Album'),&#10;          ),&#10;          new ListTile(&#10;            leading: new Icon(Icons.phone),&#10;            title: new Text('Phone'),&#10;          ),&#10;        ],&#10;      )," description="new ListView(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newButtonCustom" value="new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        decoration: new BoxDecoration(&#10;          color: Theme.of(context).buttonColor,&#10;          borderRadius: new BorderRadius.circular(8.0),&#10;        ),&#10;        child: new Text('$ButtonText$'),&#10;      )," description="child: new Container(" toReformat="true" toShortenFQNames="true">
+    <variable name="ButtonText" expression="" defaultValue="&quot;ButtonText&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="onTapCallback" value="onTap: () {&#10;        $callback$&#10;      }," description="onTap: () {" toReformat="true" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="SnackBar" value=" final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;&#10;        Scaffold.of(context).showSnackBar(snackBar);" description="SnackBar" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newGestureDector" value="new Container(&#10;              child: new GestureDetector(&#10;                onTap: () {&#10;                  final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;                  Scaffold.of(context).showSnackBar(snackBar);&#10;                },&#10;                // Our Custom Button!&#10;                child: new Container(&#10;                  padding: new EdgeInsets.all(12.0),&#10;                  decoration: new BoxDecoration(&#10;                    color: Theme&#10;                        .of(context)&#10;                        .buttonColor,&#10;                    borderRadius: new BorderRadius.circular(8.0),&#10;                  ),&#10;                  child: new Text('My Button'),&#10;                ),&#10;              )&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCustomTouchClass" value="import 'package:flutter/material.dart';&#10;&#10;class CustomTouch extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    // Our GestureDetector wraps our button&#10;    return new GestureDetector(&#10;      // When the child is tapped, show a snackbar&#10;      onTap: () {&#10;        final snackBar = new SnackBar(content: new Text(&quot;Tap&quot;));&#10;&#10;        Scaffold.of(context).showSnackBar(snackBar);&#10;      },&#10;      // Our Custom Button!&#10;      child: new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        decoration: new BoxDecoration(&#10;          color: Theme.of(context).buttonColor,&#10;          borderRadius: new BorderRadius.circular(8.0),&#10;        ),&#10;        child: new Text('My Button'),&#10;      ),&#10;    );&#10;  }&#10;}" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newInkWallButtonClass" value="import 'package:flutter/material.dart';&#10;&#10;class InkWallBUtton extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    // The InkWell Wraps our custom flat button Widget&#10;    return new InkWell(&#10;      // When the user taps the button, show a snackbar&#10;      onTap: () {&#10;        Scaffold.of(context).showSnackBar(new SnackBar(&#10;          content: new Text('Tap'),&#10;        ));&#10;      },&#10;      child: new Container(&#10;        padding: new EdgeInsets.all(12.0),&#10;        child: new Text('Ink Wall Button'),&#10;      ),&#10;    );&#10;  }&#10;}" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newContainerFull" value="new Container(&#10;            constraints: new BoxConstraints.expand(&#10;              height: Theme.of(context).textTheme.display1.fontSize * 1.1 + 200.0,&#10;            ),&#10;            padding: const EdgeInsets.all(8.0),&#10;            color: Colors.teal.shade700,&#10;            alignment: Alignment.center,&#10;            child: new Text('Hello World', style: Theme.of(context).textTheme.display1.copyWith(color: Colors.white)),&#10;            foregroundDecoration: new BoxDecoration(&#10;              image: new DecorationImage(&#10;                image: new NetworkImage('https://raw.githubusercontent.com/flutter/website/master/_includes/code/layout/lakes/images/lake.jpg'),&#10;                centerSlice: new Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),&#10;              ),&#10;            ),&#10;            transform: new Matrix4.rotationZ(0.1),&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newRow" value="new Row(&#10;            children: &lt;Widget&gt;[&#10;              const Expanded(&#10;                child: const Text('Flutter\'s hot reload helps you quickly and easily experiment, build UIs, add features, and fix bug faster. Experience sub-second reload times, without losing state, on emulators, simulators, and hardware for iOS and Android.'),&#10;              ),&#10;              const Icon(Icons.sentiment_very_satisfied),&#10;            ],&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newImageAsset" value="new Image.asset('$url$')" description="new Image.asset('$url$')" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newPadding" value="new Padding(&#10;              padding: const EdgeInsets.all(20.0),&#10;              child: new $widgets$,&#10;            )," description="new Padding(" toReformat="true" toShortenFQNames="true">
+    <variable name="widgets" expression="" defaultValue="&quot;widgets&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newWhiteCardClass" value="import 'package:flutter/material.dart';&#10;&#10;class WhiteCard extends StatelessWidget {&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    final TextStyle textStyle = Theme.of(context).textTheme.display1;&#10;    return new Card(&#10;      color: Colors.transparent,&#10;      child: new Center(&#10;        child: new Column(&#10;          mainAxisSize: MainAxisSize.min,&#10;          crossAxisAlignment: CrossAxisAlignment.center,&#10;          children: &lt;Widget&gt;[&#10;            new Icon(Icons.warning, size: 128.0, color: textStyle.color),&#10;            new Text(&quot;Text&quot;, style: textStyle),&#10;          ],&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="newWhiteCardClass" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMIOS" value="import 'package:flutter/cupertino.dart';" description="import 'package:flutter/cupertino.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIosIndicator" value="new CupertinoActivityIndicator()," description="new CupertinoActivityIndicator()," toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="setState1Line" value="setState(() { _pressedCount += 1; });" description="setState(() { _pressedCount += 1; });" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newRaisedButton" value="new RaisedButton(&#10;            child: const Text('Connect with Twitter'),&#10;            color: Theme.of(context).accentColor,&#10;            elevation: 4.0,&#10;            splashColor: Colors.blueGrey,&#10;            onPressed: () {&#10;              // Perform some action&#10;            },&#10;          )," description="new RaisedButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIOSicon" value="const Icon(CupertinoIcons.conversation_bubble)" description="const Icon(CupertinoIcons.conversation_bubble)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="colorHex" value="const Color(0xFF$FFFF$)" description="const Color(0xFFFFFF)" toReformat="true" toShortenFQNames="true">
+    <variable name="FFFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newAssetImage" value="new AssetImage(&quot;$url$&quot;)" description="new AssetImage(&quot;$url$&quot;)" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIconData" value="const IconData(0x$e901$, fontFamily: '$icomoon$')" description="const IconData(0xe901, fontFamily: 'icomoon')" toReformat="true" toShortenFQNames="true">
+    <variable name="e901" expression="" defaultValue="&quot;e901&quot;" alwaysStopAt="true" />
+    <variable name="icomoon" expression="" defaultValue="&quot;icomoon&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newCenterColumnText" value="new Center(&#10;            child: new Column(&#10;              mainAxisAlignment: MainAxisAlignment.center,&#10;&#10;              children: &lt;Widget&gt;[&#10;                new Text('Design by Luca'),&#10;                new Text('Code  by Victor'),&#10;              ],&#10;            )&#10;          )" description="new Center(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newBackgroundImage2" value="new Container(&#10;              decoration: new BoxDecoration(&#10;              image: new DecorationImage(&#10;                image: new AssetImage(&quot;assets/home/background.png&quot;),&#10;                fit: BoxFit.cover,),&#10;            ),&#10;          )" description="new Container(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newOpacity" value="new Opacity(&#10;                    opacity: 0.15,&#10;                    child: new Text(&quot;$text$&quot;)&#10;                ),//End of Opac" description="new Opacity(" toReformat="true" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTextForm" value="new TextFormField(&#10;                decoration: new InputDecoration(labelText: 'Email'),&#10;                validator: (val) =&gt;&#10;                !val.contains('@') ? 'Not a valid email.' : null,&#10;                onSaved: (val) =&gt; _email = val,&#10;              )," description="new TextFormField(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMAsync" value="import 'dart:async';" description="import 'dart:async';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMConvert" value="import 'dart:convert';" description="import 'dart:convert';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMhttp" value="import 'package:http/http.dart' as http;" description="import 'package:http/http.dart' as http;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newClassException" value="class $FetchDataException$ implements Exception {&#10;  String _message;&#10;  $FetchDataException$(this._message);&#10;  String toString() {&#10;    return &quot;Exception: $_message&quot;;&#10;  }&#10;}" description="class $FetchDataException$ implements Exception {" toReformat="true" toShortenFQNames="true">
+    <variable name="FetchDataException" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newClassFileName" value="class $ProfileFontsName$ {&#10;  static final String $TimeBurner$ = &quot;$Timeburner$&quot;;&#10;}" description="class $ProfileFontsName$ {" toReformat="true" toShortenFQNames="true">
+    <variable name="ProfileFontsName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TimeBurner" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Timeburner" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="staticFinalString" value="static final String $StringName$ = &quot;$String$&quot;;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="StringName" expression="" defaultValue="&quot;StringName&quot;" alwaysStopAt="true" />
+    <variable name="String" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newScreen" value="import 'package:flutter/material.dart' ;&#10;&#10;class $TestScreen$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Scaffold(&#10;      body: new Container(&#10;        decoration: new BoxDecoration(&#10;          image: new DecorationImage(&#10;            image: new AssetImage(&quot;assets/home/background.png&quot;),&#10;            fit: BoxFit.cover,&#10;          ),&#10;        ),&#10;        child: $null$,&#10;      ),&#10;    ); //End of Container&#10;  }&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TestScreen" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMFrontAwesome" value="import 'package:font_awesome_flutter/font_awesome_flutter.dart';" description="import 'package:font_awesome_flutter/font_awesome_flutter.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIconFontAwesome" value="new IconButton(&#10;            icon: new Icon(FontAwesomeIcons.gamepad),&#10;            onPressed: () { print(&quot;Pressed&quot;); }&#10;        )" description="new IconButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newTopPadding" value="final topPadding = MediaQuery&#10;        .of(context)&#10;        .padding&#10;        .top;" description="final topPadding = MediaQuery" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="StringGetLambda" value="String get $fullName$ =&gt; &quot;$firstName$ $lastName$&quot;;" description="final topPadding = MediaQuery" toReformat="true" toShortenFQNames="true">
+    <variable name="fullName" expression="" defaultValue="&quot;fullname&quot;" alwaysStopAt="true" />
+    <variable name="firstName" expression="" defaultValue="&quot;$firstName&quot;" alwaysStopAt="true" />
+    <variable name="lastName" expression="" defaultValue="&quot;$lastName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newPaddingBottom" value="new Padding(&#10;                  padding: const EdgeInsets.only(bottom: $15$.0),&#10;                  child: $null$,&#10;                )," description="final topPadding = MediaQuery" toReformat="true" toShortenFQNames="true">
+    <variable name="15" expression="" defaultValue="&quot;15&quot;" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIconClass" value="class $LineAwesome$Icons {&#10;  static const fontFamily = &quot;$LineAwesome$&quot;;&#10;&#10;  static final IconData bell = new IconData(0xf141, fontFamily: fontFamily);&#10;  static final IconData home = new IconData(0xf237, fontFamily: fontFamily);&#10;  static final IconData user = new IconData(0xf364, fontFamily: fontFamily);&#10;  static final IconData thumbsUp = new IconData(0xf33f, fontFamily: fontFamily);&#10;  static final IconData bookmark = new IconData(0xf14f, fontFamily: fontFamily);&#10;}" description="class $LineAwesome$Icons {" toReformat="true" toShortenFQNames="true">
+    <variable name="LineAwesome" expression="" defaultValue="&quot;LineAwesome&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMWidgets" value="import 'package:flutter/widgets.dart';" description="import 'package:flutter/widgets.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+</templateSet>
