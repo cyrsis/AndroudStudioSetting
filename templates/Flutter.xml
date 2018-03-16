@@ -388,4 +388,15 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newIconClass" value="class $LineAwesome$Icons {&#10;  static const fontFamily = &quot;$LineAwesome$&quot;;&#10;&#10;  static final IconData bell = new IconData(0xf141, fontFamily: fontFamily);&#10;  static final IconData home = new IconData(0xf237, fontFamily: fontFamily);&#10;  static final IconData user = new IconData(0xf364, fontFamily: fontFamily);&#10;  static final IconData thumbsUp = new IconData(0xf33f, fontFamily: fontFamily);&#10;  static final IconData bookmark = new IconData(0xf14f, fontFamily: fontFamily);&#10;}" description="class $LineAwesome$Icons {" toReformat="true" toShortenFQNames="true">
+    <variable name="LineAwesome" expression="" defaultValue="&quot;LineAwesome&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMWidgets" value="import 'package:flutter/widgets.dart';" description="import 'package:flutter/widgets.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
