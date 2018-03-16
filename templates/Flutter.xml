@@ -315,4 +315,19 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="IMAsync" value="import 'dart:async';" description="import 'dart:async';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMConvert" value="import 'dart:convert';" description="import 'dart:convert';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMhttp" value="import 'package:http/http.dart' as http;" description="import 'package:http/http.dart' as http;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
