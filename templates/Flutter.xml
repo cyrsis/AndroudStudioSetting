@@ -330,4 +330,10 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newClassException" value="class $FetchDataException$ implements Exception {&#10;  String _message;&#10;  $FetchDataException$(this._message);&#10;  String toString() {&#10;    return &quot;Exception: $_message&quot;;&#10;  }&#10;}" description="class $FetchDataException$ implements Exception {" toReformat="true" toShortenFQNames="true">
+    <variable name="FetchDataException" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
