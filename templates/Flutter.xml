@@ -373,4 +373,12 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="StringGetLambda" value="String get $fullName$ =&gt; &quot;$firstName$ $lastName$&quot;;" description="final topPadding = MediaQuery" toReformat="true" toShortenFQNames="true">
+    <variable name="fullName" expression="" defaultValue="&quot;fullname&quot;" alwaysStopAt="true" />
+    <variable name="firstName" expression="" defaultValue="&quot;$firstName&quot;" alwaysStopAt="true" />
+    <variable name="lastName" expression="" defaultValue="&quot;$lastName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
