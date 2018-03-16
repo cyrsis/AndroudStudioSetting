@@ -351,4 +351,21 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newScreen" value="import 'package:flutter/material.dart' ;&#10;&#10;class $TestScreen$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return new Scaffold(&#10;      body: new Container(&#10;        decoration: new BoxDecoration(&#10;          image: new DecorationImage(&#10;            image: new AssetImage(&quot;assets/home/background.png&quot;),&#10;            fit: BoxFit.cover,&#10;          ),&#10;        ),&#10;        child: $null$,&#10;      ),&#10;    ); //End of Container&#10;  }&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TestScreen" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMFrontAwesome" value="import 'package:font_awesome_flutter/font_awesome_flutter.dart';" description="import 'package:font_awesome_flutter/font_awesome_flutter.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIconFontAwesome" value="new IconButton(&#10;            icon: new Icon(FontAwesomeIcons.gamepad),&#10;            onPressed: () { print(&quot;Pressed&quot;); }&#10;        )" description="new IconButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
