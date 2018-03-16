@@ -399,4 +399,15 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="getBarHeight" value="final double statusBarHeight = MediaQuery&#10;        .of(context)&#10;        .padding&#10;        .top;" description="getBarHeight" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newPaddingTopStatusBar" value="padding: new EdgeInsets.only(top: $statusBarHeight$)," description="newPaddingTopStatusBar" toReformat="true" toShortenFQNames="true">
+    <variable name="statusBarHeight" expression="" defaultValue="&quot;statusBarHeight&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
