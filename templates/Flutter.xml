@@ -368,4 +368,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newTopPadding" value="final topPadding = MediaQuery&#10;        .of(context)&#10;        .padding&#10;        .top;" description="final topPadding = MediaQuery" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
