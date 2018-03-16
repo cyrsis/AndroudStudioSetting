@@ -336,4 +336,19 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newClassFileName" value="class $ProfileFontsName$ {&#10;  static final String $TimeBurner$ = &quot;$Timeburner$&quot;;&#10;}" description="class $ProfileFontsName$ {" toReformat="true" toShortenFQNames="true">
+    <variable name="ProfileFontsName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TimeBurner" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Timeburner" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="staticFinalString" value="static final String $StringName$ = &quot;$String$&quot;;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="StringName" expression="" defaultValue="&quot;StringName&quot;" alwaysStopAt="true" />
+    <variable name="String" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
