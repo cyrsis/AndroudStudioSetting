@@ -410,4 +410,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="ScaffoldShowSnackBar" value="Scaffold.of(context).showSnackBar(new SnackBar(&#10;          content: new Text('Tap'),&#10;        ));" description="ScaffoldShowSnackBar" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
