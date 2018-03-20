@@ -415,4 +415,14 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="newIconButton" value="const IconButton(&#10;                  icon: const Icon(Icons.more_vert),&#10;                  onPressed: null&#10;                )" description="const IconButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newExpaned" value="new Expanded(&#10;                  child: new Text(name)&#10;                )," description="newExpaned" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
