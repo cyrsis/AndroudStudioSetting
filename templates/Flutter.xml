@@ -425,4 +425,14 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="IMMath" value="import 'dart:math';" description="import 'dart:math';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMAnimation" value="import 'package:flutter/animation.dart';" description="import 'package:flutter/animation.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
