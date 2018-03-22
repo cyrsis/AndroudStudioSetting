@@ -410,4 +410,48 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="ScaffoldShowSnackBar" value="Scaffold.of(context).showSnackBar(new SnackBar(&#10;          content: new Text('Tap'),&#10;        ));" description="ScaffoldShowSnackBar" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newIconButton" value="const IconButton(&#10;                  icon: const Icon(Icons.more_vert),&#10;                  onPressed: null&#10;                )" description="const IconButton(" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newExpaned" value="new Expanded(&#10;                  child: new Text(name)&#10;                )," description="newExpaned" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMMath" value="import 'dart:math';" description="import 'dart:math';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="IMAnimation" value="import 'package:flutter/animation.dart';" description="import 'package:flutter/animation.dart';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="flutterSDKLocation" value="flutter.sdk=k\:\\flutter" description="flutterSDKLocation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="enumReducer" value="enum $AppTab$ { $todos$, $stats$ }" description="enum $AppTab$ { $todos$, $stats$ }" toReformat="true" toShortenFQNames="true">
+    <variable name="AppTab" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="todos" expression="" defaultValue="&quot;todos&quot;" alwaysStopAt="true" />
+    <variable name="stats" expression="" defaultValue="&quot;Status&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="newfinalString" value="final String $Title$;" description="final String $Title$;" toReformat="true" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
