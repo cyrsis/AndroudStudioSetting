@@ -435,4 +435,9 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="flutterSDKLocation" value="flutter.sdk=k\:\\flutter" description="flutterSDKLocation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
