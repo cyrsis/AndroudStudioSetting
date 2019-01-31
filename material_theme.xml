@@ -3,5 +3,6 @@
     <option name="version" value="2.4.1.5-2018.1" />
     <option name="useMaterialIcons" value="false" />
     <option name="userId" value="578d79ef:166f7f557b2:-7fff" />
+    <option name="allowDataCollection" value="true" />
   </component>
 </application>
