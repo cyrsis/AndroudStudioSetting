@@ -1,9 +1,9 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="version" value="2.9.6.4" />
-    <option name="useMaterialIcons" value="false" />
-    <option name="userId" value="578d79ef:166f7f557b2:-7fff" />
     <option name="allowDataCollection" value="true" />
     <option name="isWizardShown" value="true" />
+    <option name="useMaterialIcons" value="false" />
+    <option name="userId" value="578d79ef:166f7f557b2:-7fff" />
+    <option name="version" value="3.5.0.1" />
   </component>
 </application>
